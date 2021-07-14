@@ -21,7 +21,6 @@ for (c1 in colnames(mat)){
   }
 }
 
-
 # combine data into long format
 combine <- lapply(lst, stack)
 combine <- lapply(combine, function(x){colnames(x) = c('r','ind1'); return(x)})
