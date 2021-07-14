@@ -30,8 +30,9 @@ result1 <- lapply(names(comp1), function(t){
   item <- comp1[[t]]
   df <- id_significant_proteins(item, fdr_cutoff = 0.1)
   df <- df[df$significant,]
-  df <- df[,c('gene','logFC','pvalue','FDR')]
+  df <- df[,c('gene','logFC','pvalue','FDR','significant')]
   df$t <- as.numeric(gsub('t','',t))
+  #df <- df[order(df$pvalue),]
   return(df$gene)
   
 })
@@ -40,12 +41,9 @@ result1 <- lapply(names(comp1), function(t){
 
 
 names(result1) <- names(comp1)
-
 #writexl::write_xlsx(result1, 'derived/tables/fibro_versus_beads.xlsx')
 union_sig_genes <- unique(unlist(result1))
 length(unique(unlist(result1)))
-
-
 
 
 
@@ -69,17 +67,20 @@ fcs2 <- lapply(names(comp2), function(t){
   
   item <- comp2[[t]]
   df <- item
-  df <- df[df$gene %in% keep_genes,]
+  #df <- df[df$gene %in% keep_genes,]
   #df <- item[item$gene %in% union_sig_genes,]
   #df <- df[abs(df$logFC) > 2,]
-  df <- df[,c('gene','logFC','FDR')]
+  df <- df[,c('gene','logFC','pvalue','FDR')]
   df$t <- as.numeric(gsub('t','',t))
   df <- df[order(df$gene),]
   df$cell <- 'fibro'
+  df <- df[order(df$pvalue),]
   return(df)
   
 })
 
+names(fcs2) <- paste0(names(comp2),'_fibro.t0_fibro')
+writexl::write_xlsx(fcs2, 'derived/tables/fibro_versus_fibro.xlsx')
 
 # cluster data
 
