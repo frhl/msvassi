@@ -77,7 +77,11 @@ keep_peptide <- unlist(lapply(strsplit(df$peptide_counts_unique, split = ';'), f
 table(keep_peptide)
 df <- df[keep_peptide, ]
 
+
 # save data
 fwrite(df, 'extdata/210714_ms_clean.txt', sep = '\t')
+
+
+
 
 
