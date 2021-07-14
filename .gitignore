@@ -2,6 +2,9 @@
 .Rhistory
 .Rapp.history
 
+# big confidential data files
+extdata/*
+
 # Session Data files
 .RData
 
