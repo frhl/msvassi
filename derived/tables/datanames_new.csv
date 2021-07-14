@@ -1,0 +1,25 @@
+oldname,data_removed,id,reps,
+LFQ intensity 8_20210630_ADamianou_APEX_1_rerun,LFQ intensity _ADamianou_APEX_1_rerun,1,1,fibro_0
+LFQ intensity 8_20210630_ADamianou_APEX_2,LFQ intensity _ADamianou_APEX_2,2,2,fibro_0
+LFQ intensity 8_20210630_ADamianou_APEX_3,LFQ intensity _ADamianou_APEX_3,3,3,fibro_0
+LFQ intensity 8_20210630_ADamianou_APEX_4,LFQ intensity _ADamianou_APEX_4,4,1,fibro_10
+LFQ intensity 8_20210630_ADamianou_APEX_5,LFQ intensity _ADamianou_APEX_5,5,2,fibro_10
+LFQ intensity 8_20210630_ADamianou_APEX_6,LFQ intensity _ADamianou_APEX_6,6,3,fibro_10
+LFQ intensity 8_20210630_ADamianou_APEX_7,LFQ intensity _ADamianou_APEX_7,7,1,fibro_20
+LFQ intensity 8_20210630_ADamianou_APEX_8,LFQ intensity _ADamianou_APEX_8,8,2,fibro_20
+LFQ intensity 8_20210630_ADamianou_APEX_9,LFQ intensity _ADamianou_APEX_9,9,3,fibro_20
+LFQ intensity 8_20210630_ADamianou_APEX_10,LFQ intensity _ADamianou_APEX_10,10,1,fibro_40
+LFQ intensity 8_20210630_ADamianou_APEX_11,LFQ intensity _ADamianou_APEX_11,11,2,fibro_40
+LFQ intensity 8_20210630_ADamianou_APEX_12,LFQ intensity _ADamianou_APEX_12,12,3,fibro_40
+LFQ intensity 8_20210630_ADamianou_APEX_13,LFQ intensity _ADamianou_APEX_13,13,1,fibro_240
+LFQ intensity 8_20210630_ADamianou_APEX_14,LFQ intensity _ADamianou_APEX_14,14,2,fibro_240
+LFQ intensity 8_20210630_ADamianou_APEX_15,LFQ intensity _ADamianou_APEX_15,15,3,fibro_240
+LFQ intensity 8_20210630_ADamianou_APEX_16_Beads,LFQ intensity _ADamianou_APEX_16_Beads,16,1,fibro_beads
+LFQ intensity 8_20210630_ADamianou_APEX_17_beads,LFQ intensity _ADamianou_APEX_17_beads,17,2,fibro_beads
+LFQ intensity 8_20210630_ADamianou_APEX_18_beads,LFQ intensity _ADamianou_APEX_18_beads,18,3,fibro_beads
+LFQ intensity 8_20210630_ADamianou_APEX_19,LFQ intensity _ADamianou_APEX_19,19,1,HEK293_0
+LFQ intensity 8_20210630_ADamianou_APEX_20,LFQ intensity _ADamianou_APEX_20,20,2,HEK293_0
+LFQ intensity 8_20210630_ADamianou_APEX_21,LFQ intensity _ADamianou_APEX_21,21,3,HEK293_0
+LFQ intensity _20210630_ADamianou_APEX_22,LFQ intensity _ADamianou_APEX_22,22,1,HEK293_20
+LFQ intensity 8_20210630_ADamianou_APEX_23,LFQ intensity _ADamianou_APEX_23,23,2,HEK293_20
+LFQ intensity 8_20210630_ADamianou_APEX_24,LFQ intensity _ADamianou_APEX_24,24,3,HEK293_20

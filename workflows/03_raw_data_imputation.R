@@ -2,7 +2,7 @@
 source('scripts/impute_by_col.R')
 source('scripts/normalize_by_col.R')
 
-pdf('derived/plots/norm_imputation_graphs.pdf', width = 7, height = 5)
+pdf('derived/tables/norm_imputation_graphs.pdf', width = 7, height = 5)
 
 # read in data
 df <- read.table('extdata/210714_ms_clean.txt', sep = '\t', header= T)
