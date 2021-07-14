@@ -29,15 +29,24 @@ result1 <- lapply(names(comp1), function(t){
   
   item <- comp1[[t]]
   df <- id_significant_proteins(item, fdr_cutoff = 0.1)
+  df <- df[df$significant,]
   df <- df[,c('gene','logFC','pvalue','FDR')]
   df$t <- as.numeric(gsub('t','',t))
   return(df$gene)
   
 })
 
+
+
+
 names(result1) <- names(comp1)
+
+#writexl::write_xlsx(result1, 'derived/tables/fibro_versus_beads.xlsx')
 union_sig_genes <- unique(unlist(result1))
 length(unique(unlist(result1)))
+
+
+
 
 
 #pdf('derived/plots/upsetplot_beads.pdf',width = 10, height = 8)
@@ -107,6 +116,8 @@ ggplot(fcs_long, aes(x=t, y=gene, fill=logFC, label = label)) +
   scale_fill_gradient2(high = 'red', low = 'blue', mid = 'white') + 
   theme_bw()
 ggsave('derived/plots/heatmap_fdr01beads.pdf',width = 8, height = 14)
+
+
 
 fwrite(data.frame(gene = as.character(fcs_long$gene)), file = 'derived/heatmap_fdr01beads_genes.txt')
 
