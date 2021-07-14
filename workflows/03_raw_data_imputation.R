@@ -18,6 +18,7 @@ p1 <- ggplot(long, aes(x = value)) +
   facet_wrap(~variable) +
   ggtitle('Log2 normalized')
 
+
 ints_df <- normalize_by_col(ints_df) # subtract the median
 long = reshape2::melt(ints_df)
 p2 <- ggplot(long, aes(x = value)) +
@@ -25,6 +26,7 @@ p2 <- ggplot(long, aes(x = value)) +
   facet_wrap(~variable) +
   ggtitle('With imputation + normalized')
 
+## impute
 ints_norm <- ints_df
 ints_df <- impute_by_col(ints_df) # left-shited gaussian
 long = reshape2::melt(ints_df)
@@ -36,7 +38,6 @@ p3 <- ggplot(long, aes(x = value)) +
 print(p1)
 print(p2)
 print(p3)
-
 graphics.off()
 
 # add columns for imputed values
